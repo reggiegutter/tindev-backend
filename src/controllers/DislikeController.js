@@ -1,4 +1,3 @@
-// const api = require('../utils');
 const Dev = require('../models/Dev');
 
 module.exports = {
