@@ -1,0 +1,26 @@
+###
+GET http://localhost:3333/
+Content-Type: application/json
+
+### Register
+POST http://localhost:3333/devs
+Content-Type: application/json
+
+{
+  "username": "pellizzetti"
+}
+
+### Like
+POST http://localhost:3333/devs/5d4f2b21569af72f54811a55/like
+Content-Type: application/json
+user: 5d4f289f0f01800b508cdd8d
+
+### Dislike
+POST http://localhost:3333/devs/5d4f2e16a68e2e2f20b44041/dislike
+Content-Type: application/json
+user: 5d4f289f0f01800b508cdd8d
+
+### List users that can be liked
+GET http://localhost:3333/devs
+Content-Type: application/json
+user: 5d4f32223a4c403238a06621
